@@ -112,6 +112,8 @@ function getCustomer(id: number): Customer | null | undefined {
     return id === 0 ? null : {birthday: new Date()}
 }
 
+
+
 let customer = getCustomer(0);
 //Optional property acsess operator 
 console.log(customer?.birthday?.getFullYear());
